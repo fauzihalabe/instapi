@@ -32,19 +32,18 @@
                 <div class="row">
 
                   <div class="col-md-4">
-                    <div class="form-group" [ngClass]="{'focused':focus5===true}">
+                    <div class="form-group" >
                       <div class="input-group mb-4">
                         <input [(ngModel)]="form.value" class="form-control inputCustom" placeholder="Digite aqui"
-                          type="text" (focus)="focus5=true" (blur)="focus5=false">
+                          type="text">
                       </div>
                     </div>
                   </div>
 
                   <div class="col-md-3">
-                    <div class="form-group" [ngClass]="{'focused':focus5===true}">
+                    <div class="form-group">
                       <div class="input-group mb-4">
-                        <select [(ngModel)]="form.type" class="form-control inputCustom" (focus)="focus5=true"
-                          (blur)="focus5=false">
+                        <select [(ngModel)]="form.type" class="form-control inputCustom">
                           <option value="user">Busca por @usuario</option>
                           <option value="tag">Busca por #hashtag</option>
                         </select>
