@@ -1,0 +1,24 @@
+<footer class="footer"
+  [ngClass]="{'has-cards': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'}">
+
+  <div class="container">
+
+    <hr>
+    <div class="row align-items-center justify-content-md-between">
+      <div class="col-md-6">
+        <div class="copyright">
+          &copy; {{test | date: 'yyyy'}}
+          <a href="https://github.com/fauzihalabe" target="_blank">Fauzi Halabe</a>.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-footer justify-content-end">
+          <li class="nav-item">
+            <a href="https://documenter.getpostman.com/view/3189281/SzKZsG6d?version=latest" class="nav-link"
+              target="_blank">Documentação</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
